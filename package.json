@@ -1,0 +1,38 @@
+{
+  "name": "yargs2",
+  "version": "1.0.0",
+  "description": "add supportPassArgs for yargs, yargs the modern, pirate-themed, successor to optimist.",
+  "keywords": [
+    "args",
+    "argument",
+    "cli",
+    "command",
+    "option",
+    "parser",
+    "parsing"
+  ],
+  "homepage": "https://github.com/bluelovers/yargs2#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/yargs2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/yargs2.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "demo": "node ./test/demo -a 77777 -- --p 1 a b c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/yargs": "^11.0.0"
+  }
+}
