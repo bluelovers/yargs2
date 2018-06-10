@@ -1,6 +1,6 @@
 {
   "name": "yargs2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "add supportPassArgs for yargs, yargs the modern, pirate-themed, successor to optimist.",
   "keywords": [
     "args",
@@ -9,6 +9,7 @@
     "command",
     "option",
     "parser",
+    "yargs",
     "parsing"
   ],
   "homepage": "https://github.com/bluelovers/yargs2#readme",
