@@ -7,19 +7,23 @@ const _yargs = require("yargs/yargs");
 let OLD_PARSE_ARGS;
 function _Argv(processArgs, cwd, options = {}) {
     options = options || {};
+    options.supportPassArgs = (options.supportPassArgs || false);
     let inputArgs = processArgs.slice();
     let passArgs = [];
     const argv = _yargs(inputArgs, cwd, require);
     if (!OLD_PARSE_ARGS) {
         OLD_PARSE_ARGS = argv._parseArgs;
     }
+    argv.supportPassArgs = options.supportPassArgs;
     argv._parseArgs = function parseArgs(args, shortCircuit, _skipValidation, commandIndex) {
         let inputArgs = args.slice();
         let passArgs = [];
-        if (options.supportPassArgs) {
+        if (this.supportPassArgs) {
             let i = inputArgs.indexOf('--');
-            passArgs = inputArgs.slice(i + 1);
-            inputArgs = inputArgs.slice(0, i);
+            if (i > -1) {
+                passArgs = inputArgs.slice(i + 1);
+                inputArgs = inputArgs.slice(0, i);
+            }
         }
         let ret = OLD_PARSE_ARGS(inputArgs, shortCircuit, _skipValidation, commandIndex);
         ret.__ = passArgs;

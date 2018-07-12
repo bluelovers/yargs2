@@ -1,6 +1,6 @@
 {
   "name": "yargs2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "add supportPassArgs for yargs, yargs the modern, pirate-themed, successor to optimist.",
   "keywords": [
     "args",
@@ -27,13 +27,13 @@
     "test": "test"
   },
   "scripts": {
-    "demo": "node ./test/demo -a 77777 -- --p 1 a b c",
+    "demo": "node ./test/demo -a 77777 666 -- --p 1 a b c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "yargs": "^11.0.0"
+    "yargs": "^12.0.1"
   },
   "devDependencies": {
-    "@types/yargs": "^11.0.0"
+    "@types/yargs": "^11.1.0"
   }
 }
