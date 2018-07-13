@@ -2,12 +2,14 @@
  * Created by user on 2018/6/1/001.
  */
 
+/// <reference types="yargs" />
+
 import * as yargs from 'yargs';
 import _Argv, { IOptions } from './core';
 // @ts-ignore
 export * from 'yargs';
 export * from './core';
-import { Arguments, Argv } from './core';
+import { Arguments, Argv } from 'yargs';
 
 export { Arguments, Argv };
 export { IOptions }

@@ -4,7 +4,7 @@
 import { IOptions } from './core';
 export * from 'yargs';
 export * from './core';
-import { Arguments, Argv } from './core';
+import { Arguments, Argv } from 'yargs';
 export { Arguments, Argv };
 export { IOptions };
 export interface IYargs2 extends Argv {

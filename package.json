@@ -1,6 +1,6 @@
 {
   "name": "yargs2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "add supportPassArgs for yargs, yargs the modern, pirate-themed, successor to optimist.",
   "keywords": [
     "args",
